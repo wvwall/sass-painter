@@ -3,12 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  line-height: 0.5em;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 header {
   background-color: #000;
   width: 100%;
-  height: 90px;
 }
 header nav {
   width: 75%;
@@ -26,10 +31,11 @@ header nav .top ul.flex {
 }
 header nav .top ul li {
   list-style: none;
-  margin: 0 15px;
+  margin: 0 5px;
   font-size: 0.8em;
   margin-top: 10px;
   opacity: 0.9;
+  line-height: 15px;
 }
 header nav .top ul li i {
   color: #009CFF;
@@ -45,6 +51,7 @@ header nav .bottom.flex {
 }
 header nav .bottom img {
   width: 80px;
+  margin-right: 20px;
 }
 header nav .bottom ul {
   color: #fff;
@@ -54,12 +61,361 @@ header nav .bottom ul.flex {
 }
 header nav .bottom ul li {
   list-style: none;
-  margin: 0 15px;
-  font-size: 0.8em;
-  margin-top: 10px;
+  margin: 0 10px;
+  font-size: 0.75em;
+  margin-top: 12px;
   opacity: 0.9;
+  line-height: 15px;
 }
 header .jumbo {
+  width: 100%;
   height: 500px;
   background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+header .jumbo .ctaJumbo {
+  height: 65%;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+header .jumbo .ctaJumbo img {
+  width: 250px;
+}
+header .jumbo .ctaJumbo p {
+  line-height: 20px;
+}
+header .jumbo .ctaJumbo p.fucsia {
+  width: auto;
+}
+header .jumbo .ctaJumbo .fucsia {
+  color: #C70EB8;
+}
+header .jumbo .ctaJumbo .fucsia.bold {
+  font-weight: 500;
+}
+header .jumbo .ctaJumbo .cta .myBtn {
+  padding: 15px 20px;
+  border: 2px solid black;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 10px;
+}
+header .jumbo .ctaJumbo .cta .myBtn:hover {
+  opacity: 0.8;
+}
+header .jumbo .ctaJumbo .cta .myBtn.btnTrasp {
+  background-color: transparent;
+  color: #000;
+}
+header .jumbo .ctaJumbo .cta .myBtn.btnTrasp:hover {
+  opacity: 1;
+}
+header .navbar {
+  width: 100%;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+#selectLen {
+  height: 30px;
+}
+
+@media all and (max-width: 767px) {
+  header nav .top {
+    display: none;
+  }
+}
+.bg-gray {
+  background-color: #E8E8E8;
+}
+.bg-gray h5 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+.bg-gray .myCards {
+  width: 85%;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 60px;
+}
+.bg-gray .myCards.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bg-gray .myCards .myCard {
+  width: 320px;
+  height: 320px;
+  margin: 10px 10px;
+  background-color: #fff;
+}
+.bg-gray .myCards .myCard img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.bg-gray .myCards .myCard.flex {
+  display: flex;
+  flex-direction: column;
+}
+.bg-gray .myCards .myCard .card-info {
+  padding: 20px;
+}
+.bg-gray .myCards .myCard p {
+  line-height: 20px;
+}
+.bg-gray .myCards .myCard p span.new {
+  color: #33AEFF;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-right: 2px;
+  font-style: oblique;
+}
+.bg-gray .myCards .myCard p.title-card {
+  font-weight: 500;
+}
+.bg-gray .myCards .myCard .learn-card {
+  color: #33AEFF;
+  font-size: 0.9em;
+}
+.bg-gray .container-moduls {
+  padding-bottom: 50px;
+}
+.bg-gray .container-moduls .moduls {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  color: #fff;
+}
+.bg-gray .container-moduls .moduls img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.bg-gray .container-moduls .moduls .modul {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 60px 50px; */
+}
+.bg-gray .container-moduls .moduls .modul p {
+  line-height: 20px;
+}
+.bg-gray .container-moduls .moduls .modul .myBtn {
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 10px;
+  line-height: 20px;
+}
+.bg-gray .container-moduls .moduls .modul .myBtn:hover {
+  opacity: 0.8;
+}
+.bg-gray .container-moduls .moduls .modul.wacom {
+  background-color: #3C1567;
+  padding: 30px 30px;
+}
+.bg-gray .container-moduls .moduls .modul.painter {
+  background-color: #3C3C3C;
+  padding: 30px 30px;
+}
+.bg-gray .container-moduls .moduls .modul.buisiness {
+  background-color: #0072BC;
+  padding: 30px 30px;
+}
+
+@media all and (max-width: 767px) {
+  .container-moduls {
+    padding-bottom: 50px;
+  }
+  .container-moduls .moduls {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    color: #fff;
+  }
+  .container-moduls .moduls.column-reverse {
+    flex-direction: column;
+  }
+  .container-moduls .moduls .modul {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container-moduls .moduls .modul img {
+    display: inline-block;
+    width: 200%;
+    height: 100%;
+  }
+  .container-moduls .moduls .modul p {
+    line-height: 20px;
+  }
+  .container-moduls .moduls .modul .myBtn {
+    padding: 15px 20px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .container-moduls .moduls .modul .myBtn:hover {
+    opacity: 0.8;
+  }
+  .container-moduls .moduls .modul.wacom {
+    width: 100%;
+    background-color: #3C1567;
+    height: auto;
+    padding: 30px 30px;
+  }
+  .container-moduls .moduls .modul.painter {
+    width: 100%;
+    background-color: #3C3C3C;
+    height: auto;
+    padding: 30px 30px;
+  }
+  .container-moduls .moduls .modul.buisiness {
+    width: 100%;
+    background-color: #0072BC;
+    height: auto;
+    padding: 30px 30px;
+  }
+}
+footer .bg-gray {
+  padding-bottom: 50px;
+}
+footer .bg-gray .list-footer {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .bg-gray .list-footer ul li {
+  list-style: none;
+  line-height: 30px;
+}
+footer .bg-gray .list-footer ul li a {
+  color: #000;
+  opacity: 0.6;
+  font-size: 0.8em;
+}
+
+footer .icon {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .icon i {
+  font-size: 2em;
+  margin-left: 10px;
+}
+footer .icon i.fa-instagram-square {
+  color: #E4405F;
+}
+footer .icon i.fa-facebook-square {
+  color: #3B5998;
+}
+footer .icon i.fa-twitter-square {
+  color: #1DA1F2;
+}
+footer .icon i.fa-youtube-square {
+  color: #CD201F;
+}
+footer .icon i.fa-pinterest-square {
+  color: #BD081C;
+}
+footer .icon i.fa-rss-square {
+  color: #FF8D00;
+}
+
+footer .black-footer {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer .black-footer .container-footer-black {
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .black-footer .container-footer-black div {
+  width: 50%;
+}
+footer .black-footer .container-footer-black div.terms {
+  display: flex;
+  font-size: 0.6em;
+}
+footer .black-footer .container-footer-black div.terms span {
+  line-height: 20px;
+  color: #fff;
+  opacity: 0.7;
+  padding: 10px 5px;
+}
+footer .black-footer .container-footer-black div.terms p {
+  padding: 10px 5px;
+  width: auto;
+  line-height: 20px;
+  color: #fff;
+}
+
+@media all and (max-width: 767px) {
+  footer .black-footer {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .black-footer .container-footer-black {
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  footer .black-footer .container-footer-black div {
+    width: 100%;
+  }
+  footer .black-footer .container-footer-black div.terms {
+    display: flex;
+    font-size: 0.6em;
+  }
+  footer .black-footer .container-footer-black div.terms span {
+    line-height: 20px;
+    color: #fff;
+    opacity: 0.7;
+    padding: 10px 5px;
+  }
+  footer .black-footer .container-footer-black div.terms p {
+    padding: 10px 5px;
+    width: auto;
+    line-height: 20px;
+    color: #fff;
+  }
 }

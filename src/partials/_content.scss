@@ -1,0 +1,176 @@
+.bg-gray {
+    background-color: #E8E8E8;
+    
+    h5 {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: 400;
+    }
+    
+    .myCards {
+        width: 85%;
+        margin: 0 auto;
+        height: auto;
+        margin-bottom: 60px;
+        &.flex {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .myCard {
+           width: 320px;
+           height: 320px;
+            margin: 10px 10px;
+            background-color: #fff;
+            img {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            &.flex {
+                display: flex;
+                flex-direction: column;
+            }
+            .card-info {
+                padding: 20px;
+            }
+            p {
+                line-height: 20px;
+                span.new {
+                    color: #33AEFF;
+                    font-weight: 500;
+                    font-size: 1.2em;
+                    text-transform: uppercase;
+                    margin-right: 2px;
+                    font-style: oblique;
+                }
+                &.title-card {
+                    font-weight: 500;
+                }
+            }
+            .learn-card {
+                color: #33AEFF;
+                font-size: 0.9em;
+
+            }
+        }
+    }
+    .container-moduls {
+        padding-bottom: 50px;
+        .moduls {
+            width: $container-width;
+            margin: 0 auto; 
+            display: flex;
+            color:#fff;
+             img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            
+            .modul {
+                width: 50%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                /* padding: 60px 50px; */
+                p {
+                    line-height: 20px;
+                }
+                
+                .myBtn {
+                    padding: 15px 20px;
+                    background-color: #fff;
+                    color: #000;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    line-height: 20px;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                
+                &.wacom {
+                    background-color: #3C1567;
+                    padding: 30px 30px;
+                }
+                &.painter {
+                    background-color: #3C3C3C;
+                    padding: 30px 30px;
+                }
+                &.buisiness {
+                    background-color: #0072BC;
+                    padding: 30px 30px;
+                }
+                
+            }
+        }
+    }
+    
+}
+
+@media all and(max-width: 767px) {
+    .container-moduls {
+        padding-bottom: 50px;
+        .moduls {
+            width: $container-width;
+            margin: 0 auto; 
+            display: flex;
+            flex-direction: column-reverse;
+            color:#fff;
+            &.column-reverse {
+                flex-direction: column;
+            }
+            
+            .modul {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                img {
+                    display: inline-block;
+                    width: 200%;
+                    height: 100%;
+                }
+                p {
+                    line-height: 20px;
+                }
+                
+                .myBtn {
+                    padding: 15px 20px;
+                    background-color: #fff;
+                    color: #000;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                
+                &.wacom {
+                    width: 100%;
+                    background-color: #3C1567;
+                    height: auto;
+                    padding: 30px 30px;
+                }
+                &.painter {
+                    width: 100%;
+                    background-color: #3C3C3C;
+                    height: auto;
+                    padding: 30px 30px;
+                }
+                &.buisiness {
+                    width: 100%;
+                    background-color: #0072BC;
+                    height: auto;
+                    padding: 30px 30px;
+                }
+                
+            }
+        }
+    }
+}
